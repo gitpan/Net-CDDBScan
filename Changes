@@ -1,0 +1,8 @@
+Revision history for Perl extension Net::CDDBScan.
+
+2.01  Tue Jan 16 08:33:26 2001
+	More major internal rewrites. Lots of
+code consolidation. Entry stubs funcs for new
+features added, 2 internal funcs removed/combined
+into a third.
+

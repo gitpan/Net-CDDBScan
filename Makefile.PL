@@ -1,11 +1,3 @@
-# This -*- perl -*- script makes the Makefile
-
-#--- Distribution section ---
-
-$NAME     = 'Net';
-$DISTNAME = "CDDBScan";
-$VERSION  = "2.0b";
-
 BEGIN { require 5.002 }
 
 use ExtUtils::MakeMaker;
@@ -54,18 +46,29 @@ sub MY::post_initialize
 
 chk_version(LWP::Simple => '1.32') or
     warn  "\n"
-	. "*** For Net::CDDBScan to work you require version 1.32, or later, of\n"
+ . "*** For Net::CDDBScan to work you require version 1.32, or later, of\n"
 	. "    LWP::Simple from CPAN/modules/by-module/LWP/libnet/libwww-perl-5.48.tar.gz\n\n";
+
+chk_version(URI::Escape => '3.16') or
+    warn  "\n"
+ . "*** For Net::CDDBScan to work you require version 3.16, or later, of\n"
+	. "    URI::Escape from CPAN/modules/by-module/URI/URI-1.10.tar.gz\n\n";
 
 #--- Write the Makefile
 
 WriteMakefile(
-	VERSION   => $VERSION,
-	DISTNAME  => $DISTNAME,
-	NAME      => $NAME,
+	VERSION   => '2.01',
+	NAME      => 'Net::CDDBScan',
 	AUTHOR    => 'David Shultz <dshultz@redchip.com>',
 	ABSTRACT  => 'Module to extract album and song names from CDDB database without needing CD ID.',
 	PREREQ_PM => {
-			LWP::Simple => 1.32
+		      LWP::Simple => 1.32,
+		      URI::Escape => 3.16,
 		    },
 );
+
+
+
+
+
+
