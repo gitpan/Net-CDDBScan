@@ -1,0 +1,70 @@
+CDDBScan is a simple interface to the online CDDB database (via http).
+This module was written out of need, it's my first module and I'm easily
+not an expert perl developer.  The basic idea is that you have one or more
+files (mp3?) for which you don't know the artist, albums or other songs 
+on the album.  This module can be used to determine these things.
+
+FUTURE WORK
+
+AVAILABILITY
+
+The latest version of CDDBScan is available from the Comprehensive Perl
+Archive Network (CPAN). To find a CPAN site near you see:
+
+    http://www.perl.com/CPAN
+                            ^ no slash here !!
+
+INSTALLATION
+
+In order to use this package you will need Perl version 5.002 or
+better.  You install CDDBScan, as you would install any perl module
+library, by running these commands:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+If you want to install a private copy of CDDBScan in your home
+directory, then you should try to produce the initial Makefile with
+something like this command:
+
+  perl Makefile.PL PREFIX=~/perl
+
+
+The Makefile.PL program will start out by checking your perl
+installation for a few packages that are recommended to be installed
+together with CDDBScan.  These packages should be available on CPAN
+(described above).
+
+DOCUMENTATION
+
+See ChangeLog for recent changes.  POD style documentation is included
+in all modules and scripts.  These are normally converted to manual
+pages and installed as part of the "make install" process.  You should
+also be able to use the 'perldoc' utility to extract documentation from
+the module files directly.
+
+SUPPORT
+
+Bug reports and suggestions for improvements can be sendt to me at
+<dshultz@redchip.com>. 
+
+This module has an option to output a debug transcript to STDERR.
+When reporting bugs/problems please, if possible, include a transcript of a run.
+
+COPYRIGHT
+
+  © 1998-2000 David Shultz. All rights reserved.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+Share and Enjoy!
+
+POSTFACE
+
+My thanks go out to Graham Barr who's installation and configure files I
+shamelessly copied and edited for this package.  My personal note to
+Mr. Barr:  Your an inspuration me and those with whom I've worked. As
+we say; "Your the shit".  
