@@ -1,5 +1,5 @@
 t/cddb.t
-CDDBScan.pm
+Net/CDDBScan.pm
 Makefile.PL
 MANIFEST
 README
